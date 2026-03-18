@@ -22,7 +22,7 @@ Only hosts/ports that return valid certificate data are included in the report.
 Results are exported to CSV by default in the same directory as the script
 using the naming format:
 
-    SslCertReport-MMDDYY.csv
+    SslCertReport.csv
 
 Each row in the report includes:
     Host IP
@@ -50,12 +50,19 @@ available in the system PATH.
 Optional path for the CSV output file. If not specified, the report is
 written to the script directory as:
 
-    SslCertReport-MMDDYY.csv
+    SslCertReport.csv
+
+If the file already exists, it is overwritten.
 
 .PARAMETER AllPorts
 If specified, Nmap will scan all TCP ports (-p-) instead of only the
 default HTTPS-related ports. This significantly increases scan time but
 can discover certificates on non-standard ports.
+
+.PARAMETER IpSort
+If specified, sort the report by IP address (numeric order), then port,
+hostname, and expiration date. By default, the report is sorted by
+expiration date ascending.
 
 .EXAMPLE
 .\Get-SslCertReport.ps1 192.168.1.0/24
@@ -102,7 +109,9 @@ param(
 
     [string]$CsvPath,
 
-    [switch]$AllPorts
+    [switch]$AllPorts,
+
+    [switch]$IpSort
 )
 
 Set-StrictMode -Version Latest
@@ -268,6 +277,34 @@ function Convert-ToExpirationDate {
     }
 }
 
+function Get-ExpirationSortKey {
+    param(
+        [AllowNull()]
+        [object]$Value
+    )
+
+    if ($null -eq $Value) {
+        return '9|'
+    }
+
+    $text = [string]$Value
+    if ([string]::IsNullOrWhiteSpace($text)) {
+        return '9|'
+    }
+
+    try {
+        $dateValue = [datetime]$text
+        return ('0|{0}' -f $dateValue.ToString('yyyyMMdd'))
+    }
+    catch {
+        if ($text -match '^(\d{4})-(\d{2})-(\d{2})') {
+            return ('0|{0}{1}{2}' -f $matches[1], $matches[2], $matches[3])
+        }
+    }
+
+    return "8|$text"
+}
+
 function Get-SslCertReport {
     [CmdletBinding()]
     param(
@@ -388,23 +425,32 @@ function Get-SslCertReport {
 $scriptDirectory = Get-ScriptDirectory -Path $PSCommandPath
 
 if ([string]::IsNullOrWhiteSpace($CsvPath)) {
-    $dateStamp = Get-Date -Format 'MMddyy'
-    $CsvPath = Join-Path $scriptDirectory "SslCertReport-$dateStamp.csv"
+    $CsvPath = Join-Path $scriptDirectory "SslCertReport.csv"
 }
 
 $report = Get-SslCertReport -Targets $Targets -NmapPath $NmapPath -AllPorts:$AllPorts
 
-$sortedReport = $report | Sort-Object `
-    @{ Expression = { Get-IpSortKey -Address $_.HostIP }; Ascending = $true }, `
-    @{ Expression = 'Port'; Ascending = $true }, `
-    @{ Expression = 'Hostname'; Ascending = $true }
+if ($IpSort) {
+    $sortedReport = @($report | Sort-Object `
+        @{ Expression = { Get-IpSortKey -Address $_.HostIP }; Ascending = $true }, `
+        @{ Expression = 'Port'; Ascending = $true }, `
+        @{ Expression = 'Hostname'; Ascending = $true }, `
+        @{ Expression = { Get-ExpirationSortKey -Value $_.ExpirationDate }; Ascending = $true })
+}
+else {
+    $sortedReport = @($report | Sort-Object `
+        @{ Expression = { Get-ExpirationSortKey -Value $_.ExpirationDate }; Ascending = $true }, `
+        @{ Expression = { Get-IpSortKey -Address $_.HostIP }; Ascending = $true }, `
+        @{ Expression = 'Port'; Ascending = $true }, `
+        @{ Expression = 'Hostname'; Ascending = $true })
+}
 
 $sortedReport |
-    Export-Csv -Path $CsvPath -NoTypeInformation -Encoding UTF8
+    Export-Csv -Path $CsvPath -NoTypeInformation -Encoding UTF8 -Force
 
 Write-Host "CSV written to: $CsvPath"
 
-if ($sortedReport.Count -eq 0) {
+if (@($sortedReport).Count -eq 0) {
     Write-Warning "No certificates were returned by nmap."
 }
 else {
