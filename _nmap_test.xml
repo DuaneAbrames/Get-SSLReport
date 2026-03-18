@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Wed Mar 18 14:12:31 2026 as: &quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -p 443,4433,8443,4430 -&#45;script ssl-cert -oX c:\\Users\\duane.DRAGON\\source\\repos\\Get-SSLReport\\_nmap_test.xml 206.83.228.0/26 -->
+<nmaprun scanner="nmap" args="&quot;C:\\Program Files (x86)\\Nmap\\nmap.exe&quot; -p 443,4433,8443,4430 -&#45;script ssl-cert -oX c:\\Users\\duane.DRAGON\\source\\repos\\Get-SSLReport\\_nmap_test.xml 206.83.228.0/26" start="1773857551" startstr="Wed Mar 18 14:12:31 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="4" services="443,4430,4433,8443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.34" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.33" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.36" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.35" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.49" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.38" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="206.83.228.21" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1773857554" endtime="1773857554"><status state="up" reason="echo-reply" reason_ttl="244"/>
+<address addr="206.83.228.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="edge.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="244"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4430"><state state="closed" reason="reset" reason_ttl="244"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="closed" reason="reset" reason_ttl="244"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="reset" reason_ttl="244"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="18496" rttvar="6278" to="100000"/>
+</host>
+<host starttime="1773857554" endtime="1773857555"><status state="up" reason="echo-reply" reason_ttl="53"/>
+<address addr="206.83.228.2" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ns1.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="https" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=ns1.nettek.net&#xa;Subject Alternative Name: DNS:ns1.nettek.net&#xa;Issuer: commonName=R12/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-02-11T04:50:36&#xa;Not valid after:  2026-05-12T04:50:35&#xa;MD5:     7e35 2194 dfc0 c55b 51f1 78e4 080b 4f7c&#xa;SHA-1:   3e9b 8679 32f2 2842 bb36 dc75 b54e 9e8b a7d9 52c6&#xa;SHA-256: 7ff0 7d67 f391 2e2d 6494 ffd4 b4cd 7eb6 e471 4d3f 5a42 5d3e 4951 b44f 9e86 37a6"><table key="subject">
+<elem key="commonName">ns1.nettek.net</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R12</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D273F04E65CF410B5F09CD6F845B25614082319AEA45074FBFDAAAE333C4C6E7924FFA8414296A00E9EF687663B4EEBA3C8F0564E53D3A51E1F9BD007E30029C07595D7951A575BDDD6D51248D3DD628BFD28CBC75838CF14BEA61540A23C4F96813AEEE0A445E4A3167208E15CC15B023B09CEBAF23F7D038B392ABE13CC497E67C2218007769772190327B9114F8DCAF13EA512C91A6D8149C7C8218B93C943768826B5F6C1AE9DD6A1F76463ADB221C7D20DAB34127404DF93BCC8496DEF88FAF29BF90FCE3F499955E1B62EF11F33DEDC54577A04E7A5008B27FFC83213F8E94DD571F9088A1CD087B85F8CD128941D3D4BEB7C4216436BEDA3AC86F822B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">43:D0:F9:82:3B:FE:49:AB:D8:E3:B8:CC:29:01:36:63:E1:11:87:AF</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">00:B5:29:F2:2D:8E:6F:31:E8:9B:4C:AD:78:3E:FA:DC:E9:0C:D1:D2</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://r12.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:ns1.nettek.net</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://r12.c.lencr.org/13.crl</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0E:57:94:BC:F3:AE:A9:3E:33:1B:2C:99:07:B3:F7:90:&#xa;                DF:9B:C2:3D:71:32:25:DD:21:A9:25:AC:61:C5:4E:21&#xa;    Timestamp : Feb 11 05:49:06.086 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:B4:41:2C:2B:DE:DD:A7:2F:CE:8B:05:&#xa;                52:AD:C3:34:BC:C7:55:51:CE:EE:BA:5C:AA:B1:1D:4F:&#xa;                E6:B7:FD:DC:D1:02:20:4B:1C:AC:C5:15:B4:D0:CD:08:&#xa;                0C:BF:86:86:2E:32:18:AD:1E:55:FA:69:7B:20:B4:D3:&#xa;                A5:BA:78:AA:E0:76:38&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D1:6E:A9:A5:68:07:7E:66:35:A0:3F:37:A5:DD:BC:03:&#xa;                A5:3C:41:12:14:D4:88:18:F5:E9:31:B3:23:CB:95:04&#xa;    Timestamp : Feb 11 05:49:06.330 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:05:9B:E6:01:48:55:3C:CC:25:F9:1C:1A:&#xa;                3E:5E:A0:6F:E4:90:A3:08:9B:4C:FB:38:A4:90:D8:47:&#xa;                06:6F:EB:6D:02:20:26:79:09:60:1D:7F:34:7A:10:BB:&#xa;                53:56:6C:05:E2:2B:96:D9:72:D8:7C:26:7E:84:76:0A:&#xa;                54:1C:A6:CD:AF:5E</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-02-11T04:50:36</elem>
+<elem key="notAfter">2026-05-12T04:50:35</elem>
+</table>
+<elem key="md5">7e352194dfc0c55b51f178e4080b4f7c</elem>
+<elem key="sha1">3e9b867932f22842bb36dc75b54e9e8ba7d952c6</elem>
+<elem key="sha256">7ff07d67f3912e2d6494ffd4b4cd7eb6e4714d3f5a425d3e4951b44f9e8637a6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE9zCCA9+gAwIBAgISBblWPoHsnvjgpALrlTaadr2MMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTIwHhcNMjYwMjExMDQ1MDM2WhcNMjYwNTEyMDQ1MDM1WjAZMRcwFQYDVQQD&#xa;Ew5uczEubmV0dGVrLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB&#xa;ANJz8E5lz0ELXwnNb4RbJWFAgjGa6kUHT7/aquMzxMbnkk/6hBQpagDp72h2Y7Tu&#xa;ujyPBWTlPTpR4fm9AH4wApwHWV15UaV1vd1tUSSNPdYov9KMvHWDjPFL6mFUCiPE&#xa;+WgTru4KRF5KMWcgjhXMFbAjsJzrryP30DizkqvhPMSX5nwiGAB3aXchkDJ7kRT4&#xa;3K8T6lEskabYFJx8ghi5PJQ3aIJrX2wa6d1qH3ZGOtsiHH0g2rNBJ0BN+TvMhJbe&#xa;+I+vKb+Q/OP0mZVeG2LvEfM97cVFd6BOelAIsn/8gyE/jpTdVx+QiKHNCHuF+M0S&#xa;iUHT1L63xCFkNr7aOshvgisCAwEAAaOCAh0wggIZMA4GA1UdDwEB/wQEAwIFoDAd&#xa;BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNV&#xa;HQ4EFgQUQ9D5gjv+SavY47jMKQE2Y+ERh68wHwYDVR0jBBgwFoAUALUp8i2ObzHo&#xa;m0yteD763OkM0dIwMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8v&#xa;cjEyLmkubGVuY3Iub3JnLzAZBgNVHREEEjAQgg5uczEubmV0dGVrLm5ldDATBgNV&#xa;HSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1odHRwOi8vcjEyLmMu&#xa;bGVuY3Iub3JnLzEzLmNybDCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AA5XlLzz&#xa;rqk+MxssmQez95Dfm8I9cTIl3SGpJaxhxU4hAAABnEs/AKYAAAQDAEcwRQIhALRB&#xa;LCve3acvzosFUq3DNLzHVVHO7rpcqrEdT+a3/dzRAiBLHKzFFbTQzQgMv4aGLjIY&#xa;rR5V+ml7ILTTpbp4quB2OAB1ANFuqaVoB35mNaA/N6XdvAOlPEESFNSIGPXpMbMj&#xa;y5UEAAABnEs/AZoAAAQDAEYwRAIgBZvmAUhVPMwl+RwaPl6gb+SQowibTPs4pJDY&#xa;RwZv620CICZ5CWAdfzR6ELtTVmwF4iuW2XLYfCZ+hHYKVBymza9eMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQChCi45zBjiT+Oh6fJA4704jUDB88a6+l21MQC14tqhIDGacFtI&#xa;XxY3npHwpe/Jn242S17COXRBIv8tMk+RCHQ/SxrK2UTjw5vot9ua7TaDEWLFwfBf&#xa;buQaE800wg56mm29vefMzIQHLjQBvlZ29tSp0XklVHs31FY1CuDdxkRnc9+oSpee&#xa;cq8yKgZZ/nKtITea9Nr53fpi+jydsRGDHCgzuJvinmJveM/+3N6EmxKKTqFCi0FI&#xa;YAjwG+IlLAdwsn1OAm2eWJDXQOpXXZvCoMgxT2I0PktahapdQtbBUcBziZ0uTlz5&#xa;89RKKKYl66Qq2avCoheyJ0Vx6tksu9T6OJHL&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="4430"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="16500" rttvar="13000" to="100000"/>
+</host>
+<host starttime="1773857554" endtime="1773857555"><status state="up" reason="echo-reply" reason_ttl="53"/>
+<address addr="206.83.228.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ns2.nettek.com" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="53"/><service name="https" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=ns2.nettek.com&#xa;Subject Alternative Name: DNS:ns2.nettek.com&#xa;Issuer: commonName=R12/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2026-02-11T17:18:10&#xa;Not valid after:  2026-05-12T17:18:09&#xa;MD5:     9f86 983c 8681 1250 327d 3d8d 51ba 2633&#xa;SHA-1:   7733 c1eb 0693 93f2 9277 53b2 f829 d061 dcda ef1a&#xa;SHA-256: 008c 346b e156 22ef 33bb 500d 3bb8 4cb6 37fd 335f 0b9c daea 8f96 4b0b eb06 5c7c"><table key="subject">
+<elem key="commonName">ns2.nettek.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R12</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">E3987B6367273B74F231051224C3D21FD8B80571BF0B9FA9B7E3DE1BF8954CCEB9DAAD1292C86C7678B7E6C741938E7B413C0F6EB9F9BE63210CD054BDC2302AABDEC2768549AB72C877F294FD7D7E76E17D7116D1CD93185FDC058A04A03E3227E827E1F3B297EEBDEE991AC0CCF7F979F2AB3A3B66DA008BAB3C208881FC062055B7018BE1092EB74E62A77460506C82367D7AB079C9053941311CA014DB7F024ED6269598CC811E61BBE0ED9D98C9661651564F62D45829FA7BCEF1A51C7C6E50271DBE5D4A5445B4F5568400112BF885B1C8A1CB7DA6107748565BF19F9E8D5F598058FCA586FA9AE73993CA7E06ADF9CD8BE1660232F19A6F982A0B6BEB</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">5F:BF:6A:99:0F:BF:AA:7F:4F:EE:75:4F:D7:41:87:A0:7B:D6:FE:9C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">00:B5:29:F2:2D:8E:6F:31:E8:9B:4C:AD:78:3E:FA:DC:E9:0C:D1:D2</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://r12.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:ns2.nettek.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://r12.c.lencr.org/70.crl</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0E:57:94:BC:F3:AE:A9:3E:33:1B:2C:99:07:B3:F7:90:&#xa;                DF:9B:C2:3D:71:32:25:DD:21:A9:25:AC:61:C5:4E:21&#xa;    Timestamp : Feb 11 18:16:40.625 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:E8:A8:00:E5:9A:0A:3D:61:67:4C:C4:&#xa;                90:7E:97:CD:23:75:3D:CD:88:08:49:B4:4D:D3:86:B7:&#xa;                AC:6B:39:6B:39:02:20:1A:BA:D4:57:AE:6B:59:29:4B:&#xa;                69:93:F0:65:56:5B:09:C4:61:9E:86:3E:90:FB:33:F7:&#xa;                FF:9B:EF:81:DA:B6:6F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A5:C9:78:92:5D:57:46:17:82:87:0D:D8:89:66:0B:5C:&#xa;                55:64:8B:7D:00:40:F2:EC:07:68:51:D1:88:69:19:F7&#xa;    Timestamp : Feb 11 18:16:41.285 2026 GMT&#xa;    Extensions: 00:00:05:00:31:E4:25:95&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F1:17:E4:CE:2C:F8:FE:90:E8:03:92:&#xa;                D9:07:7C:6C:D6:6C:86:38:DC:7C:3F:D6:87:86:C9:97:&#xa;                63:1A:B8:EA:D8:02:20:24:5A:B8:AB:E3:D4:70:AC:49:&#xa;                9C:B2:55:C7:6B:71:C3:61:BB:36:A1:65:DA:BD:C3:D9:&#xa;                65:59:28:85:9C:7B:3C</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-02-11T17:18:10</elem>
+<elem key="notAfter">2026-05-12T17:18:09</elem>
+</table>
+<elem key="md5">9f86983c86811250327d3d8d51ba2633</elem>
+<elem key="sha1">7733c1eb069393f2927753b2f829d061dcdaef1a</elem>
+<elem key="sha256">008c346be15622ef33bb500d3bb84cb637fd335f0b9cdaea8f964b0beb065c7c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFADCCA+igAwIBAgISBebl5ReEd3FlnNKKXMHUfspFMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTIwHhcNMjYwMjExMTcxODEwWhcNMjYwNTEyMTcxODA5WjAZMRcwFQYDVQQD&#xa;Ew5uczIubmV0dGVrLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB&#xa;AOOYe2NnJzt08jEFEiTD0h/YuAVxvwufqbfj3hv4lUzOudqtEpLIbHZ4t+bHQZOO&#xa;e0E8D265+b5jIQzQVL3CMCqr3sJ2hUmrcsh38pT9fX524X1xFtHNkxhf3AWKBKA+&#xa;MifoJ+Hzspfuve6ZGsDM9/l58qs6O2baAIurPCCIgfwGIFW3AYvhCS63TmKndGBQ&#xa;bII2fXqweckFOUExHKAU238CTtYmlZjMgR5hu+DtnZjJZhZRVk9i1Fgp+nvO8aUc&#xa;fG5QJx2+XUpURbT1VoQAESv4hbHIoct9phB3SFZb8Z+ejV9ZgFj8pYb6muc5k8p+&#xa;Bq35zYvhZgIy8ZpvmCoLa+sCAwEAAaOCAiYwggIiMA4GA1UdDwEB/wQEAwIFoDAd&#xa;BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNV&#xa;HQ4EFgQUX79qmQ+/qn9P7nVP10GHoHvW/pwwHwYDVR0jBBgwFoAUALUp8i2ObzHo&#xa;m0yteD763OkM0dIwMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8v&#xa;cjEyLmkubGVuY3Iub3JnLzAZBgNVHREEEjAQgg5uczIubmV0dGVrLmNvbTATBgNV&#xa;HSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1odHRwOi8vcjEyLmMu&#xa;bGVuY3Iub3JnLzcwLmNybDCCAQwGCisGAQQB1nkCBAIEgf0EgfoA+AB2AA5XlLzz&#xa;rqk+MxssmQez95Dfm8I9cTIl3SGpJaxhxU4hAAABnE3rbbEAAAQDAEcwRQIhAOio&#xa;AOWaCj1hZ0zEkH6XzSN1Pc2ICEm0TdOGt6xrOWs5AiAautRXrmtZKUtpk/BlVlsJ&#xa;xGGehj6Q+zP3/5vvgdq2bwB+AKXJeJJdV0YXgocN2IlmC1xVZIt9AEDy7AdoUdGI&#xa;aRn3AAABnE3rcEUACAAABQAx5CWVBAMARzBFAiEA8Rfkziz4/pDoA5LZB3xs1myG&#xa;ONx8P9aHhsmXYxq46tgCICRauKvj1HCsSZyyVcdrccNhuzahZdq9w9llWSiFnHs8&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQBvRlBFQ9L8sf/VBRU5RYPkUK8xsXDtk24K3anP&#xa;HchT9d58mu0PY5esnYroMiQO/E1Jv3HL+U9P21Zi/xtfpHCXSRLAWMTzEHFevxAS&#xa;s5AKZh/Wxwc/y8sbJQTGxnM3c4zSidphAuc1D1fGXNy9qMiRsvnItyhUbeRoddCo&#xa;86ltDa3ltUS8d3KmZ2McLNr8UrTGuXhw85NNVhyqPtVr1JgjDOB8np8ub3pO4AXm&#xa;840GYayy/R9H3fYLdPYIud3tDUvnVJ1KMmxT7j2DWeQ/C0cJlsudx+Zxjjfg7VbN&#xa;udhuuFI2mWH2E5P41qTIPPVKh9SHm+jEf3mw57tXlwifb86d&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="4430"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="16375" rttvar="12750" to="100000"/>
+</host>
+<host starttime="1773857554" endtime="1773857555"><status state="up" reason="syn-ack" reason_ttl="116"/>
+<address addr="206.83.228.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="206-83-228-21.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="116"/><service name="https" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=cw.nettek.com&#xa;Subject Alternative Name: DNS:cw.nettek.com, DNS:www.cw.nettek.com&#xa;Issuer: commonName=Starfield Secure Certificate Authority - G2/organizationName=Starfield Technologies, Inc./stateOrProvinceName=Arizona/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2025-05-31T12:25:30&#xa;Not valid after:  2026-06-25T00:42:01&#xa;MD5:     77eb d62e 2dc6 9239 3d20 40ca 372b 8127&#xa;SHA-1:   d375 ce0e afa1 a485 27ee d0f1 109c c63a af24 5f76&#xa;SHA-256: 5665 e09c eefe a2ad 8d30 ee68 085a 7903 f1cc c590 178e e144 9293 5180 5815 0fb7"><table key="subject">
+<elem key="commonName">cw.nettek.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Starfield Secure Certificate Authority - G2</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Scottsdale</elem>
+<elem key="organizationName">Starfield Technologies, Inc.</elem>
+<elem key="organizationalUnitName">http://certs.starfieldtech.com/repository/</elem>
+<elem key="stateOrProvinceName">Arizona</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">EFD5435001D9C72F4033BF3539AA8FA04DDC13E98CF318458E40AC6E32BA4D9B44946DDA394E1453C502300051EDC01AC8BE645AE3B96C5971BCC916134BD9E57DCAB4887A88FE2EEA4E1158E2260F1D41785A23BF942CAE475595DB65484B79F7CE5F2C30F794746FACEEC03712373491FFD89F126DA5F08714E1CA262E72223B9475C477ECA6C5739D9705F6B24E9F5506A4CFDA7D5549B86F25586F01F0DCFFCAFC4C1E90B9C71EAEFA2178495AA2D74FEB589AA05199B60F82B80EDF86CE9497D7ACE7EB5AE6BBAA160FB8D78CA9937CA6ECA7C2ED8FBF4EA14A61AD706EAA2D15408D2AE51AEBAFB14F7AE1955AD6A2ADA5C9EB9F3F3BFFD39D74CB9EF10582266D30D0B14FB26246BCF00AF9C84CB6DA570094D21647F06A31C90A9BDCEEFA9902062782EAE031DE49505EE6C26B8ED231E732B2D08162F4A35000404EC574693AD0E887CF162B708FA7F25B07FCDE31049F40A41A6BE3BBF0459075FC7CF51B2F070B38478B7AF2537128BE6AF7144C7128C4F89F9163FD3F5D0EEB99FFD89B4AC4FDD8D41B5B803B4690A7507C96C3D5467F8137A5033A3A22E023FD52D6FD411F1BCB1E5CBD5109994715CC8FCD8A137AA6C7171DB5AAEFD424044E942348E0927D4E766C606686EEE740417B540E0A59D7A9EBDAC8BD4D4DADC3BF6998629CC636ADA726F38778FD3C81D4011F376F75C9E1F6A2642C1FD419333F</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.starfieldtech.com/sfig2s1-856.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114414.1.7.23.1&#xa;  CPS: http://certificates.starfieldtech.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.starfieldtech.com/&#xa;CA Issuers - URI:http://certificates.starfieldtech.com/repository/sfig2.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">25:45:81:68:50:26:38:3D:3B:2D:2C:BE:CD:6A:D9:B6:3D:B3:66:63</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:cw.nettek.com, DNS:www.cw.nettek.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">80:E8:2C:33:15:F0:8E:C2:18:6F:D7:6E:49:20:6D:14:7B:C0:36:5C</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0E:57:94:BC:F3:AE:A9:3E:33:1B:2C:99:07:B3:F7:90:&#xa;                DF:9B:C2:3D:71:32:25:DD:21:A9:25:AC:61:C5:4E:21&#xa;    Timestamp : May 31 12:25:31.385 2025 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:C6:78:FD:D4:9F:9E:41:5E:17:1F:B2:&#xa;                C9:DE:80:74:B0:A2:59:4C:00:01:2B:21:2A:00:E4:DC:&#xa;                50:32:96:12:B2:02:21:00:AD:A9:9A:C7:01:B2:52:BE:&#xa;                5A:AC:63:ED:A2:DC:41:B7:40:72:C4:C8:9B:53:85:98:&#xa;                81:41:78:9D:97:D7:CC:A7&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 64:11:C4:6C:A4:12:EC:A7:89:1C:A2:02:2E:00:BC:AB:&#xa;                4F:28:07:D4:1E:35:27:AB:EA:FE:D5:03:C9:7D:CD:F0&#xa;    Timestamp : May 31 12:25:31.641 2025 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:EA:B9:20:8E:4B:9B:A1:A2:BC:14:C6:&#xa;                4C:CE:5E:E4:DC:DA:D8:2B:16:DD:88:23:43:3A:F3:B8:&#xa;                4C:FD:C5:01:79:02:21:00:AB:1F:41:3A:AF:23:8D:90:&#xa;                5C:9A:13:55:55:11:2C:98:AA:B8:44:7B:EF:AD:FA:1F:&#xa;                43:FF:1B:74:22:24:13:9D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CB:38:F7:15:89:7C:84:A1:44:5F:5B:C1:DD:FB:C9:6E:&#xa;                F2:9A:59:CD:47:0A:69:05:85:B0:CB:14:C3:14:58:E7&#xa;    Timestamp : May 31 12:25:31.903 2025 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:BB:5C:86:19:31:24:00:F1:3A:71:7A:&#xa;                81:51:B8:81:6D:08:14:79:76:BC:13:34:A2:F2:AF:EE:&#xa;                9D:0B:0C:19:29:02:20:69:64:6E:92:99:16:D7:77:3A:&#xa;                73:4C:7B:F3:77:9E:1F:CE:00:19:6D:6C:41:0C:6E:32:&#xa;                8E:80:C0:73:66:A0:28</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2025-05-31T12:25:30</elem>
+<elem key="notAfter">2026-06-25T00:42:01</elem>
+</table>
+<elem key="md5">77ebd62e2dc692393d2040ca372b8127</elem>
+<elem key="sha1">d375ce0eafa1a48527eed0f1109cc63aaf245f76</elem>
+<elem key="sha256">5665e09ceefea2ad8d30ee68085a7903f1ccc590178ee1449293518058150fb7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHvzCCBqegAwIBAgIJAJvw3EKg6wduMA0GCSqGSIb3DQEBCwUAMIHGMQswCQYD&#xa;VQQGEwJVUzEQMA4GA1UECBMHQXJpem9uYTETMBEGA1UEBxMKU2NvdHRzZGFsZTEl&#xa;MCMGA1UEChMcU3RhcmZpZWxkIFRlY2hub2xvZ2llcywgSW5jLjEzMDEGA1UECxMq&#xa;aHR0cDovL2NlcnRzLnN0YXJmaWVsZHRlY2guY29tL3JlcG9zaXRvcnkvMTQwMgYD&#xa;VQQDEytTdGFyZmllbGQgU2VjdXJlIENlcnRpZmljYXRlIEF1dGhvcml0eSAtIEcy&#xa;MB4XDTI1MDUzMTEyMjUzMFoXDTI2MDYyNTAwNDIwMVowGDEWMBQGA1UEAxMNY3cu&#xa;bmV0dGVrLmNvbTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAO/VQ1AB&#xa;2ccvQDO/NTmqj6BN3BPpjPMYRY5ArG4yuk2bRJRt2jlOFFPFAjAAUe3AGsi+ZFrj&#xa;uWxZcbzJFhNL2eV9yrSIeoj+LupOEVjiJg8dQXhaI7+ULK5HVZXbZUhLeffOXyww&#xa;95R0b6zuwDcSNzSR/9ifEm2l8IcU4comLnIiO5R1xHfspsVznZcF9rJOn1UGpM/a&#xa;fVVJuG8lWG8B8Nz/yvxMHpC5xx6u+iF4SVqi10/rWJqgUZm2D4K4Dt+GzpSX16zn&#xa;61rmu6oWD7jXjKmTfKbsp8Ltj79OoUphrXBuqi0VQI0q5Rrrr7FPeuGVWtairaXJ&#xa;658/O//TnXTLnvEFgiZtMNCxT7JiRrzwCvnITLbaVwCU0hZH8GoxyQqb3O76mQIG&#xa;J4Lq4DHeSVBe5sJrjtIx5zKy0IFi9KNQAEBOxXRpOtDoh88WK3CPp/JbB/zeMQSf&#xa;QKQaa+O78EWQdfx89RsvBws4R4t68lNxKL5q9xRMcSjE+J+RY/0/XQ7rmf/Ym0rE&#xa;/djUG1uAO0aQp1B8lsPVRn+BN6UDOjoi4CP9Utb9QR8byx5cvVEJmUcVzI/NihN6&#xa;pscXHbWq79QkBE6UI0jgkn1OdmxgZobu50BBe1QOClnXqevayL1NTa3Dv2mYYpzG&#xa;Nq2nJvOHeP08gdQBHzdvdcnh9qJkLB/UGTM/AgMBAAGjggNbMIIDVzAMBgNVHRMB&#xa;Af8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAOBgNVHQ8BAf8E&#xa;BAMCBaAwPQYDVR0fBDYwNDAyoDCgLoYsaHR0cDovL2NybC5zdGFyZmllbGR0ZWNo&#xa;LmNvbS9zZmlnMnMxLTg1Ni5jcmwwYwYDVR0gBFwwWjBOBgtghkgBhv1uAQcXATA/&#xa;MD0GCCsGAQUFBwIBFjFodHRwOi8vY2VydGlmaWNhdGVzLnN0YXJmaWVsZHRlY2gu&#xa;Y29tL3JlcG9zaXRvcnkvMAgGBmeBDAECATCBggYIKwYBBQUHAQEEdjB0MCoGCCsG&#xa;AQUFBzABhh5odHRwOi8vb2NzcC5zdGFyZmllbGR0ZWNoLmNvbS8wRgYIKwYBBQUH&#xa;MAKGOmh0dHA6Ly9jZXJ0aWZpY2F0ZXMuc3RhcmZpZWxkdGVjaC5jb20vcmVwb3Np&#xa;dG9yeS9zZmlnMi5jcnQwHwYDVR0jBBgwFoAUJUWBaFAmOD07LSy+zWrZtj2zZmMw&#xa;KwYDVR0RBCQwIoINY3cubmV0dGVrLmNvbYIRd3d3LmN3Lm5ldHRlay5jb20wHQYD&#xa;VR0OBBYEFIDoLDMV8I7CGG/XbkkgbRR7wDZcMIIBgAYKKwYBBAHWeQIEAgSCAXAE&#xa;ggFsAWoAdwAOV5S8866pPjMbLJkHs/eQ35vCPXEyJd0hqSWsYcVOIQAAAZcmTe/5&#xa;AAAEAwBIMEYCIQDGeP3Un55BXhcfssnegHSwollMAAErISoA5NxQMpYSsgIhAK2p&#xa;mscBslK+Wqxj7aLcQbdAcsTIm1OFmIFBeJ2X18ynAHcAZBHEbKQS7KeJHKICLgC8&#xa;q08oB9QeNSer6v7VA8l9zfAAAAGXJk3w+QAABAMASDBGAiEA6rkgjkuboaK8FMZM&#xa;zl7k3NrYKxbdiCNDOvO4TP3FAXkCIQCrH0E6ryONkFyaE1VVESyYqrhEe++t+h9D&#xa;/xt0IiQTnQB2AMs49xWJfIShRF9bwd37yW7ymlnNRwppBYWwyxTDFFjnAAABlyZN&#xa;8f8AAAQDAEcwRQIhALtchhkxJADxOnF6gVG4gW0IFHl2vBM0ovKv7p0LDBkpAiBp&#xa;ZG6SmRbXdzpzTHvzd54fzgAZbWxBDG4yjoDAc2agKDANBgkqhkiG9w0BAQsFAAOC&#xa;AQEA4NDmUqFaJr3F9W6vHs2cg0Fxu15s8JFoYHCalJx4k7aJyLH0ybjXik4tifJE&#xa;5aUCLkus6m85GdlDIk4edYzrvLiO00GMAHfPxGHfzur4M2LjBqac9fC5VNzU7q52&#xa;H5UmYFcHX4y4wFXK1GuYhydY7bkqLNMuXh5ZWODFcW66TtHn6Xaqr9UhjDTXwoD4&#xa;5LHw1Ek5FpC8Sbp2HzoAMgV47s7M3lkfqKTXMQRMOd9VsooiPZRYJBxLkReEuEvw&#xa;sSRvhmT4su2VAQe7DHJsp3/tcjMHrXOzd30yVkTHg+NG9mZwQHTJbZxYdaXQp9HA&#xa;8MhojJqFv2+/Yu4V2vH1+p75BA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="4430"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="29375" rttvar="26500" to="135375"/>
+</host>
+<host starttime="1773857554" endtime="1773857554"><status state="up" reason="echo-reply" reason_ttl="244"/>
+<address addr="206.83.228.33" addrtype="ipv4"/>
+<hostnames>
+<hostname name="206-83-228-33.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="244"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4430"><state state="closed" reason="reset" reason_ttl="244"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="closed" reason="reset" reason_ttl="244"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="reset" reason_ttl="244"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="19810" rttvar="8695" to="100000"/>
+</host>
+<host starttime="1773857554" endtime="1773857554"><status state="up" reason="echo-reply" reason_ttl="244"/>
+<address addr="206.83.228.34" addrtype="ipv4"/>
+<hostnames>
+<hostname name="206-83-228-34.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="244"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4430"><state state="closed" reason="reset" reason_ttl="244"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="closed" reason="reset" reason_ttl="244"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="reset" reason_ttl="244"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="19396" rttvar="8155" to="100000"/>
+</host>
+<host starttime="1773857554" endtime="1773857554"><status state="up" reason="echo-reply" reason_ttl="245"/>
+<address addr="206.83.228.35" addrtype="ipv4"/>
+<hostnames>
+<hostname name="206-83-228-35.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="245"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4430"><state state="closed" reason="reset" reason_ttl="245"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="closed" reason="reset" reason_ttl="245"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="reset" reason_ttl="245"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="24536" rttvar="10183" to="100000"/>
+</host>
+<host starttime="1773857554" endtime="1773857554"><status state="up" reason="echo-reply" reason_ttl="53"/>
+<address addr="206.83.228.36" addrtype="ipv4"/>
+<hostnames>
+<hostname name="206-83-228-36.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="53"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4430"><state state="closed" reason="reset" reason_ttl="53"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="closed" reason="reset" reason_ttl="53"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="reset" reason_ttl="53"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="18597" rttvar="7236" to="100000"/>
+</host>
+<host starttime="1773857554" endtime="1773857554"><status state="up" reason="echo-reply" reason_ttl="53"/>
+<address addr="206.83.228.38" addrtype="ipv4"/>
+<hostnames>
+<hostname name="206-83-228-38.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="53"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4430"><state state="closed" reason="reset" reason_ttl="53"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="closed" reason="reset" reason_ttl="53"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="reset" reason_ttl="53"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="18748" rttvar="5593" to="100000"/>
+</host>
+<host starttime="1773857554" endtime="1773857554"><status state="up" reason="echo-reply" reason_ttl="244"/>
+<address addr="206.83.228.49" addrtype="ipv4"/>
+<hostnames>
+<hostname name="206-83-228-49.nettek.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="244"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4430"><state state="closed" reason="reset" reason_ttl="244"/><service name="rsqlserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4433"><state state="closed" reason="reset" reason_ttl="244"/><service name="vop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="reset" reason_ttl="244"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="18576" rttvar="6603" to="100000"/>
+</host>
+<runstats><finished time="1773857555" timestr="Wed Mar 18 14:12:35 2026" summary="Nmap done at Wed Mar 18 14:12:35 2026; 64 IP addresses (10 hosts up) scanned in 3.72 seconds" elapsed="3.72" exit="success"/><hosts up="10" down="54" total="64"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+﻿"HostIP","Hostname","Port","Protocol","CertificateCN","ExpirationDate","Subject","Issuer"
+"206.83.228.2","ns1.nettek.net","443","tcp","ns1.nettek.net","2026-05-12","commonName=ns1.nettek.net","commonName=R12/countryName=US/organizationName=Let's Encrypt"
+"206.83.228.3","ns2.nettek.com","443","tcp","ns2.nettek.com","2026-05-12","commonName=ns2.nettek.com","commonName=R12/countryName=US/organizationName=Let's Encrypt"
+"206.83.228.21","cw.nettek.com","443","tcp","cw.nettek.com","2026-06-25","commonName=cw.nettek.com","commonName=Starfield Secure Certificate Authority - G2/countryName=US/localityName=Scottsdale/organizationName=Starfield Technologies, Inc./organizationalUnitName=http://certs.starfieldtech.com/repository//stateOrProvinceName=Arizona"
